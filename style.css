@@ -1,0 +1,35 @@
+@font-face{
+  font-family: GoBold Regular;
+  src: url("font/GoBold Regular.otf");
+}
+
+body, html{
+  padding: 0;
+  margin: 0;
+  font-family: GoBold Regular;
+}
+
+h1{
+  font-family: inherit;
+  font-size: 5em;
+  color: white;
+  text-shadow: 0.06em 0.04em #000;
+  background-color: gray;
+
+  margin: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+header{
+  text-align:center;
+}
+
+#menu{
+  list-style-type: none;
+}
+
+.menuItem{
+  display: inline-block;
+  padding: 0.4em 0.8em;
+}
