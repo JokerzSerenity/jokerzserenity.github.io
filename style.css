@@ -3,6 +3,48 @@
   src: url("font/Gobold Regular.otf");
 }
 
+@media screen and (max-width: 600px){
+    .menu > a{
+      font-size: 0.8em !important;
+    }
+
+  header{
+    font-size: 2em !important;
+    margin: 1.5em 0.5em;
+  }
+
+  .join{
+    background-image: none !important;
+    background-color: rgba(100, 100, 100, 1) !important;
+  }
+}
+
+@media screen and (max-width: 350px){
+  .menu > a{
+    font-size: 0.8em !important;
+  }
+
+  header{
+    padding: 0.2em 0.1em !important;
+  }
+
+  h1{
+    font-size: 1.7em !important;
+  }
+
+  #joinBox > a, h2{
+    font-size: 1.5em !important;
+  }
+
+  p{
+    font-size: 1em !important;
+  }
+
+  .contact{
+    padding: 1em 0.5em !important;
+  }  
+}
+
 body, html{
   padding: 0;
   margin: 0;
@@ -12,7 +54,7 @@ body, html{
 body{
   background-image: url(img/nameless-banner.png);
   background-repeat: no-repeat;
-  background-size: 100% 65.5%;
+  background-size: 100% 70%;
   background-attachment: fixed;
 }
 
@@ -21,7 +63,7 @@ header{
   font-size: 4em;
   color: white;
   text-shadow: 0.06em 0.04em #000;
-  background-color: rgba(35, 10, 10, 0.6);
+  background-color: rgba(10, 10, 10, 0.6);
 
   margin: 0;
   padding: 0.75em 0.2em;
@@ -31,24 +73,19 @@ header{
 
 .menu{
   text-align: center;
-  font-size: 1.5em;
-  background-color: rgba(10, 10, 10, 0.9);
-}
-
-.menu ul{
-  margin: 0;
-  list-style-type: none;
-  color: lightgray;
-}
-
-.menu > ul > li > a{
-  color:inherit;
-  text-decoration: none;
+  font-size: 1.3em;
+  background-color: rgba(10, 10, 10, 0.6);
 }
 
 .menuItem{
   display: inline-block;
+  color: lightgray;
+  text-decoration: none;
   padding: 1.5em 0.8em;
+}
+
+a:hover{
+  cursor: pointer;
 }
 
 .home{
@@ -73,7 +110,7 @@ header{
 }
 
 .events{
-  background-color: rgba(10, 10, 10, 0.9);
+  background-color: rgba(10, 10, 10, 1);
   padding: 4em 1em;
 }
 
@@ -95,7 +132,9 @@ header{
 }
 
 .join{
-  background-color: rgba(90, 43, 43, 0.4);
+  background-image: url(img/nameless-banner.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   padding: 4em 1em;
 }
 
@@ -104,8 +143,8 @@ header{
   font-size: 4em;
   text-align: center;
   font-family: Gobold Regular;
-  color: #222222;
-  text-shadow: 0.06em 0.05em #FFF;
+  color: #999;
+  text-shadow: 0.06em 0.05em #222;
 }
 
 .join > p{
@@ -116,9 +155,32 @@ header{
   font-family: Play;
 }
 
-#contact{
-  transition-duration: 2s;
-  transition-timing-function: linear;
+#joinBox{
+  text-align: center;
+}
+
+#joinBox > h2{
+  margin: 0;
+  font-size: 2em;
+  text-align: center;
+  font-family: Gobold Regular;
+  color: #999;
+  text-shadow: 0.06em 0.05em #222;
+}
+
+#joinBox > input{
+  align-content: center;
+  margin: 1.5em;
+  width: 25%;
+}
+
+#joinBox > a{
+  font-size: 1.5em;
+  color: #222;
+  background-color: #999;
+  padding: 0.5em 0.25em;
+  border-radius: 10px;
+  text-shadow: 0.05em 0.05em lightgrey;
 }
 
 .contact{
